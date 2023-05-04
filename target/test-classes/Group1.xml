@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Group1 suite">
+    <test parallel="true" thread-count="2" name="TestDFA">
+        <groups>
+            <run>
+                <include name="constructor"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="TestDFA"/>
+        </classes>
+    </test>
+    <test parallel="true" thread-count="2" name="TestDFA">
+        <groups>
+            <run>
+                <include name="data"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="TestDFA"/>
+        </classes>
+    </test>
+</suite>
